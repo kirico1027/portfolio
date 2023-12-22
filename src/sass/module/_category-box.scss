@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.category-box {
+  @include mq(md) {
+    width: 24%;
+  }
+}

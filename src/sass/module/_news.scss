@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.news {
+  background-color: $sub-bg-color;
+  padding-top: rem(80);
+  padding-bottom: rem(72);
+}
+
+.news__inner {
+
+}
+
+.news__container {
+  @include mq(md) {
+  display: flex;
+  }
+}
+
+.news__items {
+  padding: 0 rem(20);
+
+  @include mq(md) {
+  padding-left: rem(60);
+  border-left: 1px solid #e2e2e2;
+  flex: 1;
+  }
+}
+
+.news__items {
+
+}
+
+.news__item {
+
+}
+
+
+
+

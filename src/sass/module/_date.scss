@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.date {
+  font-family: $base-font-family;
+  font-size: rem(10);
+  font-weight: $bold;
+  line-height: 1;
+  color: #a9a9a9;
+  display: inline-block;
+
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.date--works {
+  margin-top: rem(12);
+
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.date--news {
+  margin-top: rem(6);
+
+}

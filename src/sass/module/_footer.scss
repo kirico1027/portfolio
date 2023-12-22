@@ -1,0 +1,95 @@
+@use "global" as *;
+
+.footer {
+  background-color: #001135;
+  color: $white;
+  padding: rem(60) 0 rem(30);
+
+  @include mq(md) {
+    padding: rem(60) 0;
+  }
+}
+
+.footer__container {
+  padding: 0 rem(30);
+
+  @include mq(md) {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.footer__nav-items {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(15);
+
+  @include mq(md) {
+  row-gap: rem(10);
+  }
+}
+
+.footer__nav-item a {
+  font-family: $second-font-family;
+  font-size: rem(14);
+  font-weight: $regular;
+  line-height: 1;
+  padding: rem(5) 0;
+  display: block;
+  text-transform: uppercase;
+
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.footer__left {
+  margin-top: rem(60);
+
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.footer__logo-box {
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    column-gap: rem(46);
+  }
+}
+
+.footer__logo {
+  width: rem(114);
+
+  @include mq(md) {
+    width: rem(258);
+  }
+}
+
+.footer__sns {
+  display: flex;
+  column-gap: rem(15);
+  margin-top: rem(40);
+
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.footer__sns-icon .fa-facebook::before,
+.footer__sns-icon .fa-twitter::before,
+.footer__sns-icon .fa-instagram::before {
+  font-size: rem(20);
+  display: inline-block;
+}
+
+.footer__copyright {
+  font-size: rem(12);
+  font-weight: $regular;
+  line-height: 1;
+  margin-top: rem(50);
+}

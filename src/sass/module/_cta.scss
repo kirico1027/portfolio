@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.cta {
+  background: $main-color;
+  max-width: rem(1440);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cta__container {
+@include mq(md) {
+display: flex;
+flex-direction: row-reverse;
+}
+}
+
+.cta__content {
+  @include mq(md) {
+    flex: 1;
+  }
+}
+
+
+.cta__image {
+  @include mq(md) {
+    width: 56.944%;
+  }
+}
+
+.cta__image img {
+  aspect-ratio: 375/240;
+  object-fit: cover;
+  height: auto;
+
+  @include mq(md) {
+    aspect-ratio: 820/446;
+  }
+}
+

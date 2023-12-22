@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.taxonomy span {
+  font-family: $base-font-family;
+  font-size: rem(10);
+  font-weight: $medium;
+  line-height: 1;
+  display: inline-block;
+  background-color: #f3f3f3;
+  color: #626262;
+  padding: 7px 15px;
+
+  @include mq(md) {
+    font-size: rem(11);
+    padding: 6.5px 18px;
+  }
+}
+

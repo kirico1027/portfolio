@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.loop {
+  overflow: hidden;
+}
+.loop__box {
+  display: flex;
+  width: 100vw;
+  background-color: $white;
+}
+.loop__item {
+  flex: 0 0 auto;
+  font-size: rem(84);
+  font-weight: $bold;
+  white-space: nowrap;
+  padding-right: rem(25);
+  padding-left: rem(25);
+  color: $main-color;
+  font-family: $base-font-family;
+
+  @include mq(md) {
+  font-size:  rem(150);
+  }
+}
+
+.loop__item:nth-child(odd) {
+  animation: loop 50s -25s linear infinite;
+}
+.loop__item:nth-child(even) {
+  animation: loop2 50s linear infinite;
+}
+
+@keyframes loop {
+  0% {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes loop2 {
+  0% {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-200%);
+  }
+}

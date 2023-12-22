@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.section-title {
+  font-family: $third-font-family;
+  font-size: rem(38);
+  font-weight: $bold;
+  line-height: 1;
+  color: $base-font;
+
+  @include mq(md) {
+    font-size: rem(70);
+  }
+}
+
+.section-title--works {
+  padding-left: rem(20);
+
+  @include mq(md) {
+    padding-left: 0;
+  }
+}

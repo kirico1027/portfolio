@@ -6,7 +6,7 @@
   <meta name="format-detection" content="telephone=no" />
   <meta name="robots" content="noindex" />
   <!-- meta情報 -->
-  <title>CodeUps</title>
+  <title>portfolio</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- ogp -->
@@ -18,23 +18,421 @@
   <meta property="og:description" content="" />
   <!-- ファビコン -->
   <link rel="”icon”" href="" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Oswald:wght@700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
   <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!--<script src="https://code.jquery.com/jquery-3.6.0.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
-<body>
-  <header>
 
+<body>
+  <header class="header layout-header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="#">
+          <img src="./assets/images/common/logo01.svg" alt="ExciteCode">
+        </a>
+      </h1>
+      <nav class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-item">
+            <a href="#">top</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">about</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">service</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">works</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">news</a>
+          </li>
+          <li class="header__nav-item header__nav-item--contact">
+            <i class="fa-regular fa-envelope"></i><a href="#" target="_blank" rel="noopener">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="header__drawer js-drawer">
+        <div class="header__drawer-logo">
+          <a href="#">
+            <img src="./assets/images/common/logo02.svg" alt="ExciteCode">
+          </a>
+        </div>
+        <nav class="header__drawer-nav">
+          <ul class="header__drawer-items">
+            <li class="header__drawer-item">
+              <a href="#">top</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#">about</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#">service</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#">works</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#">news</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#">contact</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#">プライバシーポリシー</a>
+            </li>
+            <div class="header__sns">
+              <a class="header__sns-icon" href="#" target="_blank" rel="noopener">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a class="header__sns-icon" href="#" target="_blank" rel="noopener">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a class="header__sns-icon" href="#" target="_blank" rel="noopener">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
+
   <main>
-    <div class="inner">
-      <p class="test">変更のテスト</p>
+
+    <div class="mv layout-mv">
+      <div class="mv__inner">
+        <div class="mv__container">
+          <div class="mv__swiper mv-swiper">
+            <div class="swiper js-mv-swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <picture>
+                    <source srcset="./assets/images/common/mv-pc01.jpg" media="(min-width: 768px)" type="image/jpg">
+                    <img src="./assets/images/common/mv01.jpg" alt="" loading="lazy">
+                  </picture>
+                </li>
+                <li class="swiper-slide">
+                  <picture>
+                    <source srcset="./assets/images/common/mv-pc02.jpg" media="(min-width: 768px)" type="image/jpg">
+                    <img src="./assets/images/common/mv02.jpg" alt="" loading="lazy">
+                  </picture>
+                </li>
+                <li class="swiper-slide">
+                  <picture>
+                    <source srcset="./assets/images/common/mv-pc03.jpg" media="(min-width: 768px)" type="image/jpg">
+                    <img src="./assets/images/common/mv03.jpg" alt="" loading="lazy">
+                  </picture>
+                </li>
+                <li class="swiper-slide">
+                  <picture>
+                    <source srcset="./assets/images/common/mv-pc04.jpg" media="(min-width: 768px)" type="image/jpg">
+                    <img src="./assets/images/common/mv04.jpg" alt="" loading="lazy">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="mv__text">あなたの<br>日常が目覚める</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="loop layout-loop">
+      <div class="loop__box">
+        <p class="loop__item">Good life for Good Car</p>
+        <p class="loop__item">Good life for Good Car</p>
+        <p class="loop__item">Good life for Good Car</p>
+        <p class="loop__item">Good life for Good Car</p>
+      </div>
+    </div>
+
+    <section class="about layout-about">
+      <div class="about__inner inner">
+        <div class="about__container">
+          <picture class="about__image">
+            <img src="./assets/images/common/about.jpg" alt="" loading="lazy">
+          </picture>
+          <div class="about__body">
+            <p class="about__title">About&nbsp;us</p>
+            <p class="about__text">
+              弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく、オーナー様となる方がクルマから直接感じるリアルな感性を第一にした、最良の一台との出会いをコーディネートいたします。
+            </p>
+            <div class="button__wrapper button__wrapper--about">
+              <a href="#" class="button">read&nbsp;more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service layout-service">
+      <div class="service__inner inner">
+        <h2 class="section-title section-title--right">Service</h2>
+        <div class="service__items">
+          <div class="service__item service-item">
+            <div class="service-item__image">
+              <img src="./assets/images/common/service01.jpg" alt="">
+              <div class="service-item__image-box">
+                <p class="service-item__image-sub">Service01</p>
+                <p class="service-item__image-title">購入サポート</p>
+              </div>
+            </div>
+            <div class="service-item__body">
+              <p class="service-item__text">国を超え、メーカーを超え、高級の本質をお届けする特別な一台との出会いをサポートします。</p>
+              <div class="button__wraper button__wrapper--service">
+                <a href="#" class="button button--border">read&nbsp;more</a>
+              </div>
+            </div>
+          </div>
+          <div class="service__item service-item">
+            <div class="service-item__image">
+              <img src="./assets/images/common/service02.jpg" alt="">
+              <div class="service-item__image-box">
+                <p class="service-item__image-sub">Service02</p>
+                <p class="service-item__image-title">修理・整備</p>
+              </div>
+            </div>
+            <div class="service-item__body">
+              <p class="service-item__text">高度な輸入車修理技術と数多くの修理実績、熟練の技術・設備であなたの愛車を完全に直します。</p>
+              <div class="button__wraper button__wrapper--service">
+                <a href="#" class="button button--border">read&nbsp;more</a>
+              </div>
+            </div>
+          </div>
+          <div class="service__item service-item">
+            <div class="service-item__image">
+              <img src="./assets/images/common/service03.jpg" alt="">
+              <div class="service-item__image-box">
+                <p class="service-item__image-sub">Service03</p>
+                <p class="service-item__image-title">車検・点検</p>
+              </div>
+            </div>
+            <div class="service-item__body">
+              <p class="service-item__text">輸入車の取り扱いが県内トップクラス。専門の整備工場へ任せたいなら弊社へご相談ください。</p>
+              <div class="button__wraper button__wrapper--service">
+                <a href="#" class="button button--border">read&nbsp;more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works layout-works">
+      <div class="works__inner">
+        <h2 class="section-title section-title--works">Works</h2>
+        <div class="works__container">
+          <div class="works__items">
+            <div class="works__item works-item">
+              <div class="works-item__image">
+                <img src="./assets/images/common/works-article.jpg" alt="">
+              </div>
+              <div class="works-item__body">
+                <div class="taxonomy">
+                  <span>修理・整備</span>
+                </div>
+                <p class="works-item__title">車のドアが開けられなくなった｜ドアロックの交換と...</p>
+                <p class="works-item__text">弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく...</p>
+                <time datetime="2020-09-22" class="date date--works">2022.09.02</time>
+              </div>
+            </div>
+            <div class="works__item works-item">
+              <div class="works-item__image">
+                <img src="./assets/images/common/works-article.jpg" alt="">
+              </div>
+              <div class="works-item__body">
+                <div class="taxonomy">
+                  <span>修理・整備</span>
+                </div>
+                <p class="works-item__title">車のドアが開けられなくなった｜ドアロックの交換と...</p>
+                <p class="works-item__text">弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく...</p>
+                <time datetime="2020-09-22" class="date date--works">2022.09.02</time>
+              </div>
+            </div>
+            <div class="works__item works-item">
+              <div class="works-item__image">
+                <img src="./assets/images/common/works-article.jpg" alt="">
+              </div>
+              <div class="works-item__body">
+                <div class="taxonomy">
+                  <span>修理・整備</span>
+                </div>
+                <p class="works-item__title">車のドアが開けられなくなった｜ドアロックの交換と...</p>
+                <p class="works-item__text">弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく...</p>
+                <time datetime="2020-09-22" class="date date--works">2022.09.02</time>
+              </div>
+            </div>
+          </div>
+          <div class="button__wraper button__wrapper--works">
+            <a href="#" class="button">read&nbsp;more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="news__inner inner">
+        <div class="news__container">
+          <div class="category-box">
+            <h2 class="section-title section-title--news">News</h2>
+            <div class="category-list layout-category-list">
+              <ul class="category-list__items">
+                <li class="category-list__item is-active">すべてのお知らせ</li>
+                <li class="category-list__item">トピックス</li>
+                <li class="category-list__item">イベント・キャンペーン</li>
+                <li class="category-list__item">入庫車情報</li>
+              </ul>
+            </div>
+          </div>
+          <div class="news__items">
+            <div class="news__item news-item">
+              <div class="news-item__box">
+                <p class="date date--news">2022.09.02</p>
+                <p class="category">
+                  <span class="category__item">トピックス</span><span class="category__item">イベント・キャンペーン</span>
+                </p>
+              </div>
+              <p class="news-item__title">2022年10月8日・9日・10日の3日間、試乗車フェアを開催します</p>
+            </div>
+            <div class="news__item news-item">
+              <div class="news-item__box">
+                <p class="date date--news">2022.09.02</p>
+                <p class="category">
+                  <span class="category__item">トピックス</span><span class="category__item">イベント・キャンペーン</span>
+                  <span class="category__item">入庫車情報</span>
+                </p>
+              </div>
+              <p class="news-item__title">2022年10月8日・9日・10日の3日間、試乗車フェアを開催します</p>
+            </div>
+            <div class="news__item news-item">
+              <div class="news-item__box">
+                <p class="date date--news">2022.09.02</p>
+                <p class="category">
+                  <span class="category__item">トピックス</span><span class="category__item">イベント・キャンペーン</span>
+                </p>
+              </div>
+              <p class="news-item__title">2022年10月8日・9日・10日の3日間、試乗車フェアを開催します。2022年10月8日・9日・10日の3日間、試乗車フェアを開催します</p>
+            </div>
+            <div class="news__item news-item">
+              <div class="news-item__box">
+                <p class="date date--news">2022.09.02</p>
+                <p class="category">
+                  <span class="category__item">トピックス</span><span class="category__item">イベント・キャンペーン</span>
+                </p>
+              </div>
+              <p class="news-item__title">2022年10月8日・9日・10日の3日間、試乗車フェアを開催します</p>
+            </div>
+            <div class="news__item news-item">
+              <div class="news-item__box">
+                <p class="date date--news">2022.09.02</p>
+                <p class="category">
+                  <span class="category__item">トピックス</span><span class="category__item">イベント・キャンペーン</span>
+                </p>
+              </div>
+              <p class="news-item__title">2022年10月8日・9日・10日の3日間、試乗車フェアを開催します</p>
+            </div>
+            <div class="button__wraper button__wrapper--news">
+              <a href="#" class="button">read&nbsp;more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta">
+      <div class="cta__container">
+        <div class="cta__content cta-content">
+          <div class="cta-content__body">
+            <p class="cta-content__text">輸入車の購入や修理のご相談など<br>お気軽にお問い合わせください。</p>
+            <div class="cta-content__button-box">
+              <a href="" class="cta-content__button"><i class="fa-regular fa-envelope"></i>お問い合わせ</a>
+              <a href="" class="cta-content__button"><i class="fa-solid fa-phone"></i>0000-000-000</a>
+            </div>
+            <p class="cta-content__info">受付時間 : 火曜日を除く 10：00〜18：00</p>
+          </div>
+        </div>
+        <div class="cta__image">
+          <picture>
+            <source srcset="./assets/images/common/cta-pc.jpg" media="(min-width: 768px)" type="image/jpg">
+            <img src="./assets/images/common/cta.jpg" alt="" loading="lazy">
+          </picture>
+        </div>
+      </div>
     </div>
   </main>
-  <footer>
 
+  <footer class="footer layout-footer">
+    <div class="footer__inner inner">
+      <div class="footer__container">
+        <div class="footer__right">
+          <nav class="footer__nav">
+            <ul class="footer__nav-items">
+              <li class="footer__nav-item">
+                <a href="#">top</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#">about</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#">service</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#">works</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#">news</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#">contact</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#">プライバシーポリシー</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__left">
+          <div class="footer__logo-box">
+            <div class="footer__logo">
+              <a href="#">
+                <img src="./assets/images/common/logo02.svg" alt="省略">
+              </a>
+            </div>
+            <div class="footer__sns">
+              <a class="footer__sns-icon" href="#" target="_blank" rel="noopener">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a class="footer__sns-icon" href="#" target="_blank" rel="noopener">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a class="footer__sns-icon" href="#" target="_blank" rel="noopener">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <small class="footer__copyright">&copy;2023&nbsp;ExciteCode&nbsp;Automobile</small>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 

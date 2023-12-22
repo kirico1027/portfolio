@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.works {
+  background-color: $sub-bg-color;
+  padding-top: rem(60);
+}
+
+.works__inner {
+  @include mq("md") {
+    max-width: $inner + strip-unit($padding-pc) * 2;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.works__container {
+  margin-top: rem(20);
+  background-color: $white;
+  padding: rem(30) rem(40) rem(80);
+
+  @include mq(md) {
+    padding: rem(50) rem(40);
+  }
+}
+
+.works__items {
+
+}
+
+.works__item {
+
+}
+
+
+
+
+
+
+
+
+

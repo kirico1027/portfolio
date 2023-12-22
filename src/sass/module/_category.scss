@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.category {
+  display: flex;
+  gap: rem(6);
+  flex-wrap: wrap;
+}
+
+.category__item {
+  font-family: $base-font-family;
+  font-size: rem(10);
+  font-weight: $medium;
+  line-height: calc(14.48/10);
+  color: #626262;
+  background-color: $white;
+  padding: 5px 15px;
+  display: inline-block;
+
+  @include mq(md) {
+    font-size: rem(11);
+  }
+}

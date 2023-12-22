@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.mv-swiper {
+  position: relative;
+}
+
+.mv-swiper .swiper-wrapper {
+  margin: auto;
+  width: 100%;
+  height: rem(480);
+
+  @include mq(md) {
+    height: rem(700);
+  }
+}
+
+.mv-swiper .swiper-slide img {
+  aspect-ratio: 355/480;
+  object-fit: cover;
+  height: auto;
+
+  @include mq(md) {
+    aspect-ratio: 1034/700;
+  }
+}

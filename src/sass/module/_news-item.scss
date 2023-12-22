@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.news-item {
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+  border-bottom: 1px solid #e2e2e2;
+
+  @include mq(md) {
+    padding-top: rem(30);
+    padding-bottom: rem(30);
+  }
+}
+
+.news-item:first-child {
+  @include mq(md) {
+    padding-top: 0;
+  }
+}
+
+.news-item__box {
+  display: flex;
+  align-items: flex-start;
+  column-gap: rem(12);
+}
+
+.news-item__title {
+  font-family: $base-font-family;
+  font-size: rem(14);
+  font-weight: $medium;
+  line-height: calc(28/14);
+  color: $base-font;
+  margin-top: rem(20);
+
+  @include mq(md) {
+    font-size: rem(16);
+    margin-top: rem(26);
+  }
+}

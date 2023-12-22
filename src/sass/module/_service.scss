@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.service {
+
+}
+
+.service__inner {
+
+}
+
+.service__items {
+  margin-top: rem(40);
+
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: rem(18);
+    row-gap: rem(30);
+  }
+}
+
+.service__item {
+
+}
+
+

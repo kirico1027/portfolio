@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.category-list {
+  padding-left: rem(20);
+  padding-right: rem(20);
+
+  @include mq(md) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.category-list__items {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: rem(40);
+  row-gap: rem(15);
+  padding-left: rem(14);
+  padding-bottom: rem(40);
+  border-bottom: 1px solid #e2e2e2;
+
+  @include mq(md) {
+    flex-direction: column;
+    border-bottom: none;
+    row-gap: rem(20);
+  }
+}
+
+.category-list__item {
+  font-family: $base-font-family;
+  font-size: rem(12);
+  font-weight: $medium;
+  line-height: calc(17.38/12);
+  color: #a9a9a9;
+
+  @include mq(md) {
+  font-size:  rem(14);
+  }
+}
+
+.category-list__item.is-active {
+  color: $base-font;
+  display: flex;
+  align-items: center;
+  margin-left: rem(-13);
+}
+
+.category-list__item.is-active::before {
+  content:"■";
+  font-size: rem(9);
+  color: $main-color;
+  padding-right: rem(4);
+}
+
+
