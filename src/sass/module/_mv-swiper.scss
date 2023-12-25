@@ -7,19 +7,19 @@
 .mv-swiper .swiper-wrapper {
   margin: auto;
   width: 100%;
-  height: rem(480);
+  height: calc(100vh - rem(138));
 
   @include mq(md) {
-    height: rem(700);
+    height: 100vh;
   }
 }
 
 .mv-swiper .swiper-slide img {
   aspect-ratio: 355/480;
   object-fit: cover;
-  height: auto;
+  height: 100%;
 
   @include mq(md) {
-    aspect-ratio: 1034/700;
+    aspect-ratio: 1034/780;
   }
 }

@@ -24,15 +24,28 @@
 }
 
 .news-item__title {
+  margin-top: rem(20);
+  display: block;
+}
+
+.news-item__title span {
   font-family: $base-font-family;
   font-size: rem(14);
   font-weight: $medium;
   line-height: calc(28/14);
   color: $base-font;
-  margin-top: rem(20);
+
+  padding-bottom: .25em;
+  background: linear-gradient($base-font, $base-font) 0 100%/0 1px no-repeat;
+  transition: background 0.4s;
+  text-decoration: none;
 
   @include mq(md) {
     font-size: rem(16);
     margin-top: rem(26);
   }
+}
+
+.news-item__title span:hover {
+  background-size: 100% 1px;
 }
