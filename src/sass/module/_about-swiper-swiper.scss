@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.about-swiper-swiper .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.about-swiper-swiper .swiper-slide {
+  width: rem(180);
+
+  @include mq(md) {
+  width: rem(480);
+  }
+}
+
+.about-swiper-swiper .swiper-slide img {
+  width: 100%;
+  aspect-ratio: 180/150;
+  object-fit: cover;
+
+  @include mq(md) {
+    aspect-ratio: 480/400;
+  }
+}

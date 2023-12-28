@@ -69,5 +69,23 @@ $(function () {
   });
 });
 
+jQuery(function ($) {
+  var about_swiper = new Swiper(".js-about-swiper", {
+    loop: true,
+    speed: 3000,
+    slidesPerView: "auto",
+    spaceBetween: 4,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: "auto",
+        spaceBetween: 10,
+      },
+    },
+  });
+});
 
 });

@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.company {
+  background-color: $sub-bg-color;
+  padding-top: rem(60);
+
+  @include mq(md) {
+    padding-top: rem(70);
+  }
+}
+
+
+
+.company__inner {
+
+}
+
+
+.company__profile {
+  margin-top: rem(30);
+
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+}
+

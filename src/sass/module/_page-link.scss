@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: rem(50);
+  padding-top: rem(15);
+  padding-bottom: rem(15);
+  padding-right: rem(15);
+
+  @include mq(md) {
+    column-gap: rem(120);
+  }
+}
+
+.page-link span {
+  font-family: $base-font-family;
+  font-size:  rem(12);
+  font-weight: $regular;
+  line-height: 1;
+  color: $main-color;
+  position: relative;
+
+  @include mq(md) {
+  font-size:  rem(16);
+  }
+}
+
+.page-link span::after {
+  content: '';
+  position: absolute;
+  width: rem(7);
+  height: rem(7);
+  aspect-ratio: 1;
+  border-right: 1px solid $main-color;
+  border-bottom: 1px solid $main-color;
+  top: calc(50% - rem(3));
+  right: rem(-15);
+  transform: translateY(-50%) rotate(45deg);
+
+  @include mq(md) {
+    right: rem(-18);
+  }
+}

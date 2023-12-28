@@ -1,0 +1,73 @@
+@use "global" as *;
+
+.sub-mv__container {
+  height: rem(280);
+  background-image: url(/assets/images/common/about-mv.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: calc(100% + (100vw - 100%) / 2);
+
+  @include mq(md) {
+    background-image: url(/assets/images/common/about-mv-pc.jpg);
+    height: rem(514);
+  }
+}
+
+.sub-mv__inner {
+  padding: 0 rem(10);
+  margin: 0 auto;
+
+  @include mq("md") {
+    max-width: $inner + strip-unit($padding-pc) * 2;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}
+
+.sub-mv__text-body {
+  font-weight: $bold;
+  color: $base-font;
+  width: rem(190);
+  height: rem(130);
+  background-color: $white;
+  position: relative;
+
+  @include mq(md) {
+    width: rem(500);
+    height: rem(224);
+  }
+}
+
+.sub-mv__text-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(18);
+
+  @include mq(md) {
+    left: rem(50);
+  }
+}
+
+.sub-mv__text-en {
+  font-family: $third-font-family;
+  font-size: rem(44);
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: rem(100);
+  }
+}
+
+.sub-mv__text-ja {
+  font-family: $base-font-family;
+  font-size: rem(12);
+  line-height: 1;
+  margin-top: rem(8);
+
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+

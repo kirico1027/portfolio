@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.breadcrumb {
+  padding: rem(15);
+  font-family: $second-font-family;
+  font-size: rem(10);
+  font-weight: $regular;
+  line-height: 1;
+  color: #242424;
+  text-align: right;
+
+  @include mq(md) {
+    font-size: rem(15);
+    padding: rem(15) rem(60);
+  }
+}
